@@ -1,0 +1,21 @@
+{
+  "name": "components-communication",
+  "main": "index.html",
+  "homepage": "no",
+  "authors": [
+    "Андрей Кумыков <aakumykov@yandex.ru>"
+  ],
+  "description": "",
+  "license": "другая",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.5.8"
+  }
+}
