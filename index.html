@@ -13,14 +13,20 @@
 		
 		<script src='page-header/page-header.module.js'></script>
 		<script src='page-header/page-header.component.js'></script>
+		
 		<script src='page-footer/page-footer.module.js'></script>
 		<script src='page-footer/page-footer.component.js'></script>
+
+		<script src='buttons-area/buttons-area.module.js'></script>
+		<script src='buttons-area/buttons-area.component.js'></script>
 	</head>
 	<body ng-app='MainApp' ng-controller='RootController as root'>
 
 		<page-header text="root.page.title"></page-header>
 		
-
+		<main>
+			<buttons-area on-title-change="root.page.title = $event.newTitle"></buttons-area>
+		</main>
 
 		<page-footer text="root.page.credits"></page-footer>
 
