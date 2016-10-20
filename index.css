@@ -6,12 +6,16 @@ FOOTER
 	border-radius: 6px;
 	padding: 6px 12px;
 	margin: 6px;
+	font: 12px sans-serif;
 }
 
 HEADER {
 	border-color: limegreen;
+	color: limegreen;
 }
 
 FOOTER {
 	border-color: deepskyblue;
+	color: deepskyblue;
+	text-align: right;
 }

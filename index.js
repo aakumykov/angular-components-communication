@@ -1,11 +1,13 @@
 'use strict';
 
 var app = angular.module('MainApp',[
-	'PageHeader'
+	'PageHeader',
+	'PageFooter',
 ]);
 
 app.controller('RootController', function(){
 	this.page = {
-		title: 'Главная страница'
+		title: 'Главная страница',
+		credits: 'Андрей Кумыков, 2016',
 	}
 });
