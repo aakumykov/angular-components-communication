@@ -19,4 +19,7 @@ app.controller('RootController', function(){
 			this.page.title = arg;
 		}
 	}
+	this.pageCredits = function(){
+		return this.page.credits;
+	}
 });

@@ -22,13 +22,13 @@
 	</head>
 	<body ng-app='MainApp' ng-controller='RootController as root'>
 
-		<page-header text="root.page.title"></page-header>
+		<page-header text="root.pageTitle()"></page-header>
 		
 		<main>
-			<buttons-area on-title-change="root.page.title = $event.newTitle"></buttons-area>
+			<buttons-area on-title-change="root.pageTitle($event.newTitle)"></buttons-area>
 		</main>
 
-		<page-footer text="root.page.credits"></page-footer>
+		<page-footer text="root.pageCredits()"></page-footer>
 
 	</body>
 </html>
