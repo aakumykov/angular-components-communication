@@ -1,0 +1,17 @@
+HEADER,
+FOOTER
+{
+	border-width: 1px;
+	border-style: dashed;
+	border-radius: 6px;
+	padding: 6px 12px;
+	margin: 6px;
+}
+
+HEADER {
+	border-color: limegreen;
+}
+
+FOOTER {
+	border-color: deepskyblue;
+}
