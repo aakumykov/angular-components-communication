@@ -19,3 +19,9 @@ FOOTER {
 	color: deepskyblue;
 	text-align: right;
 }
+
+#side_bar {
+	width: 30%;
+	padding: 8px;
+	background-color: lightgrey;
+}

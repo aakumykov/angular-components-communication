@@ -19,16 +19,28 @@
 
 		<script src='buttons-area/buttons-area.module.js'></script>
 		<script src='buttons-area/buttons-area.component.js'></script>
+
+		<script src='side-bar/side-bar.module.js'></script>
+		<script src='side-bar/side-bar.component.js'></script>
 	</head>
 	<body ng-app='MainApp' ng-controller='RootController as root'>
 
-		<page-header text="root.pageTitle()"></page-header>
-		
-		<main>
-			<buttons-area on-title-change="root.pageTitle($event.newTitle)"></buttons-area>
-		</main>
+		<side-bar visible="root.navBar('status')"></side-bar>
 
-		<page-footer text="root.pageCredits()"></page-footer>
+		<div id='the_page'>
+			
+			<page-header text="root.pageTitle()"></page-header>
+			
+			<main>
+				<buttons-area 
+					on-title-change="root.pageTitle($event.newTitle)" 
+					toggle-side-bar="root.navBar('toggle')" 
+				></buttons-area>
+			</main>
+
+			<page-footer text="root.pageCredits()"></page-footer>
+
+		</div>
 
 	</body>
 </html>
