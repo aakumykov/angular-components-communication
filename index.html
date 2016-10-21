@@ -17,25 +17,21 @@
 		<script src='page-footer/page-footer.module.js'></script>
 		<script src='page-footer/page-footer.component.js'></script>
 
-		<script src='buttons-area/buttons-area.module.js'></script>
-		<script src='buttons-area/buttons-area.component.js'></script>
-
 		<script src='side-bar/side-bar.module.js'></script>
 		<script src='side-bar/side-bar.component.js'></script>
 	</head>
 	<body ng-app='MainApp' ng-controller='RootController as root'>
 
-		<side-bar visible="root.navBar('status')"></side-bar>
+		<side-bar visible="root.sideBar('?')" callback="root.sideBar($event.cmd)"></side-bar>
 
 		<div id='the_page'>
 			
 			<page-header text="root.pageTitle()"></page-header>
 			
 			<main>
-				<buttons-area 
-					on-title-change="root.pageTitle($event.newTitle)" 
-					toggle-side-bar="root.navBar('toggle')" 
-				></buttons-area>
+				<side-bar-toggle callback="root.sideBar($event.cmd)"></side-bar-toggle>
+
+				<p>Главное</p>
 			</main>
 
 			<page-footer text="root.pageCredits()"></page-footer>
