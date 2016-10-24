@@ -22,14 +22,14 @@
 	</head>
 	<body ng-app='MainApp' ng-controller='RootController as root'>
 
-		<side-bar visibility="root.sideBar('?')" action="root.sideBar($event.cmd)"></side-bar>
+		<side-bar visibility="root.sideBar('?')" toggle-action="root.sideBar($event.cmd)"></side-bar>
 
 		<div id='the_page'>
 			
 			<page-header text="root.pageTitle()"></page-header>
 			
 			<main>
-				<side-bar-toggle action="root.sideBar($event.cmd)"></side-bar-toggle>
+				<side-bar-toggle toggle-action="root.sideBar($event.cmd)"></side-bar-toggle>
 
 				<p>Главное</p>
 			</main>
